@@ -210,6 +210,9 @@ details p{color:var(--text-2);margin:0;padding:0 20px 18px 42px;font-size:17px}
   .grid{grid-template-columns:1fr}
   .grid > .card{border-right:0}
   .grid > .card:last-child{border-bottom:0}
+  .grid.two{grid-template-columns:1fr}
+  .grid.two > .card{border-bottom:1px solid var(--line)}
+  .grid.two > .card:last-child{border-bottom:0}
   .scan{flex-direction:column}
   .scan button{border-left:0;border-top:1px solid var(--line);padding:14px}
   .hero{padding:65.4px 0 64px}
