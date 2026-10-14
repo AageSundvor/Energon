@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="ea" viewBox="0 0 195 195" width="195" height="195" shape-rendering="crispEdges" role="img" aria-label="Energon">
+  <style>
+.ea .on{fill:#3FD49A;animation:ea-light 220ms cubic-bezier(.2,.7,.3,1) calc(250ms + var(--i) * 60ms) both}
+.ea .off{fill:#4a525d;opacity:0;animation:ea-off 420ms ease 1450ms backwards}
+.ea{animation:ea-in 200ms ease both}
+@keyframes ea-light{0%{fill:#4a525d;opacity:.55}55%{fill:#8ee8c4;opacity:1}100%{fill:#3FD49A;opacity:1}}
+@keyframes ea-off{0%{opacity:.55}100%{opacity:0}}
+@keyframes ea-in{0%{opacity:0}100%{opacity:1}}
+@media (prefers-reduced-motion: reduce){.ea,.ea .on,.ea .off{animation:none}}
+  </style>
+  <rect class="on" style="--i:10" x="0" y="0" width="35" height="35"/>
+  <rect class="on" style="--i:9" x="40" y="0" width="35" height="35"/>
+  <rect class="on" style="--i:8" x="80" y="0" width="35" height="35"/>
+  <rect class="on" style="--i:7" x="120" y="0" width="35" height="35"/>
+  <rect class="on" style="--i:6" x="160" y="0" width="35" height="35"/>
+  <rect class="on" style="--i:11" x="0" y="40" width="35" height="35"/>
+  <rect class="off" x="40" y="40" width="35" height="35"/>
+  <rect class="off" x="80" y="40" width="35" height="35"/>
+  <rect class="off" x="120" y="40" width="35" height="35"/>
+  <rect class="on" style="--i:5" x="160" y="40" width="35" height="35"/>
+  <rect class="on" style="--i:0" x="0" y="80" width="35" height="35"/>
+  <rect class="on" style="--i:1" x="40" y="80" width="35" height="35"/>
+  <rect class="on" style="--i:2" x="80" y="80" width="35" height="35"/>
+  <rect class="on" style="--i:3" x="120" y="80" width="35" height="35"/>
+  <rect class="on" style="--i:4" x="160" y="80" width="35" height="35"/>
+  <rect class="on" style="--i:12" x="0" y="120" width="35" height="35"/>
+  <rect class="off" x="40" y="120" width="35" height="35"/>
+  <rect class="off" x="80" y="120" width="35" height="35"/>
+  <rect class="off" x="120" y="120" width="35" height="35"/>
+  <rect class="off" x="160" y="120" width="35" height="35"/>
+  <rect class="on" style="--i:13" x="0" y="160" width="35" height="35"/>
+  <rect class="on" style="--i:14" x="40" y="160" width="35" height="35"/>
+  <rect class="on" style="--i:15" x="80" y="160" width="35" height="35"/>
+  <rect class="on" style="--i:16" x="120" y="160" width="35" height="35"/>
+  <rect class="on" style="--i:17" x="160" y="160" width="35" height="35"/>
+</svg>
