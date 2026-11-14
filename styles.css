@@ -83,14 +83,6 @@ a:hover{text-decoration-color:var(--accent)}
 .hero h1{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(40px,6vw,68px);line-height:1.08;letter-spacing:-.015em;margin:0 0 26px;color:var(--text)}
 .hero h1 em{color:var(--accent);font-style:italic}
 .lead{font-size:21px;line-height:1.5;color:var(--text-2);max-width:640px;margin:0 auto 40px}
-.scan{display:flex;max-width:600px;margin:0 auto;background:var(--panel-2);border:1px solid var(--line);}
-.scan input{flex:1;min-width:0;border:0;background:transparent;color:var(--text);font-family:var(--mono);font-size:14px;padding:16px 18px;outline:none}
-.scan input::placeholder{color:var(--muted)}
-.scan button{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;border:0;border-left:1px solid var(--line);background:transparent;color:var(--accent);padding:0 20px;cursor:not-allowed}
-.scan button:enabled{cursor:pointer}
-.scan button:enabled:hover{background:var(--accent-wash);color:var(--text)}
-.scan:focus-within{border-color:var(--accent-soft)}
-.scan button::before{content:"[ ";color:var(--accent)} .scan button::after{content:" ]";color:var(--accent)}
 .fine{font-family:var(--mono);font-size:12px;color:var(--muted);margin:16px 0 0;letter-spacing:.02em}
 
 /* Sections */
@@ -102,13 +94,12 @@ a:hover{text-decoration-color:var(--accent)}
 .group::before{content:"";display:inline-block;width:8px;height:8px;background:var(--accent);margin-right:10px;vertical-align:1px}
 
 /* Product panels */
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);background:var(--panel)}
-.grid > .card{border-right:1px solid var(--line)}
-.grid > .card:last-child{border-right:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid > .card{border:1px solid var(--line);background-color:var(--panel)}
 .grid.two{grid-template-columns:repeat(2,1fr)}
 .card{position:relative;padding:24px 24px 22px;display:flex;flex-direction:column;background:transparent;transition:background 200ms ease}
-.card:hover{background:rgba(255,255,255,.018)}
-.card.featured{background:linear-gradient(180deg,var(--accent-wash),transparent 65%);box-shadow:inset 0 2px 0 var(--accent)}
+.card:hover{background-image:linear-gradient(rgba(255,255,255,.018),rgba(255,255,255,.018))}
+.card.featured{background:linear-gradient(180deg,var(--accent-wash),transparent 65%) var(--panel);box-shadow:inset 0 2px 0 var(--accent)}
 .card.muted{opacity:.78}
 .card-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
 .card h4{margin:0;font-family:var(--serif);font-weight:500;font-size:22px;line-height:1.2;color:var(--text)}
@@ -210,21 +201,12 @@ details p{color:var(--text-2);margin:0;padding:0 20px 18px 42px;font-size:17px}
 
 @media (max-width:900px){
   .grid{grid-template-columns:1fr 1fr}
-  .grid > .card{border-bottom:1px solid var(--line)}
-  .grid > .card:nth-child(2n){border-right:0}
-  .grid.two > .card{border-bottom:0}
   .two-col{grid-template-columns:1fr;gap:18px}
 }
 @media (max-width:600px){
   body{font-size:17px}
   .grid{grid-template-columns:1fr}
-  .grid > .card{border-right:0}
-  .grid > .card:last-child{border-bottom:0}
   .grid.two{grid-template-columns:1fr}
-  .grid.two > .card{border-bottom:1px solid var(--line)}
-  .grid.two > .card:last-child{border-bottom:0}
-  .scan{flex-direction:column}
-  .scan button{border-left:0;border-top:1px solid var(--line);padding:14px}
   .hero{padding:65.4px 0 64px}
   .section h2{font-size:34px}
 }

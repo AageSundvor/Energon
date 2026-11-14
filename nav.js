@@ -5,7 +5,7 @@
   function set(open) {
     root.setAttribute('data-nav-open', open ? 'true' : 'false');
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    btn.setAttribute('aria-label', open ? (btn.getAttribute('data-label-close') || 'Close menu') : (btn.getAttribute('data-label-open') || 'Open menu'));
   }
   btn.addEventListener('click', function () { set(root.getAttribute('data-nav-open') !== 'true'); });
   root.querySelectorAll('[data-nav-close]').forEach(function (el) { el.addEventListener('click', function () { set(false); }); });
