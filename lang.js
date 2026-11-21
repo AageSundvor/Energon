@@ -1,4 +1,4 @@
-/* Energon Nutrition: language choice (E-072). No inline script; CSP script-src 'self'.
+/* Energon Corporation: language choice (E-072). No inline script; CSP script-src 'self'.
    The NO/EN switch stores the choice in localStorage when clicked.
    Redirects happen ONLY from the English home page "/": a stored choice wins, otherwise the first entry of
    navigator.languages decides (nb/nn/no -> /no/, anything else stays on /). A direct /no/ link always shows

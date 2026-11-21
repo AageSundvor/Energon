@@ -1,4 +1,4 @@
-/* Energon Nutrition additions (E-072). Loaded after styles.css; styles.css itself is unchanged. */
+/* Energon Corporation additions (E-072). Loaded after styles.css; styles.css itself is unchanged. */
 .hero-actions{margin:0;display:flex;justify-content:center}
 .hero-actions .buy{margin-top:0;align-self:center;color:var(--text);border-color:var(--accent-soft);background:var(--accent-wash)}
 .product-media{display:block;margin:-22px -24px 20px;border-bottom:1px solid var(--line);background:var(--bg-deep)}
